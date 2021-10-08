@@ -212,7 +212,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/my-express-application/dev/1632270149423-2021-09-22T00:22:29.423Z/my-express-application.zip"
+                "S3Key": "serverless/my-express-application/dev/1633732878588-2021-10-08T22:41:18.588Z/my-express-application.zip"
               },
               "Handler": "index.handler",
               "Runtime": "nodejs14.x",
@@ -242,7 +242,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/my-express-application/dev/1632270149423-2021-09-22T00:22:29.423Z/my-express-application.zip"
+                "S3Key": "serverless/my-express-application/dev/1633732878588-2021-10-08T22:41:18.588Z/my-express-application.zip"
               },
               "Handler": "index.handler",
               "Runtime": "nodejs14.x",
@@ -272,7 +272,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/my-express-application/dev/1632270149423-2021-09-22T00:22:29.423Z/my-express-application.zip"
+                "S3Key": "serverless/my-express-application/dev/1633732878588-2021-10-08T22:41:18.588Z/my-express-application.zip"
               },
               "Handler": "index.handler",
               "Runtime": "nodejs14.x",
@@ -295,34 +295,34 @@
               "CreateUserLogGroup"
             ]
           },
-          "AppLambdaVersiondBzneVWNNojj4fqqfKJNt8w5unWCHspKvcRWGxojU": {
+          "AppLambdaVersionPXHv6qVtrNqIhp4dMExljwETgJmkBz38OwX5QYFZE": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AppLambdaFunction"
               },
-              "CodeSha256": "vHb80aUyNI7ODH/TBa9/dHZ6cyHT33vWBMoyj2TJM04="
+              "CodeSha256": "Plrs13tafoT3gIdoAN/XjjoP+90E4NOJkcFHJw/Vxuk="
             }
           },
-          "CreateUserLambdaVersion5zK6OnQttYSc9zUqoQ3VJA2zrtC1d3m85iXzD4iiuV4": {
+          "CreateUserLambdaVersionwLv2AClkbDdznckVpMG6q80f1CZrgJXHjGwmXGFKsY": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "CreateUserLambdaFunction"
               },
-              "CodeSha256": "vHb80aUyNI7ODH/TBa9/dHZ6cyHT33vWBMoyj2TJM04="
+              "CodeSha256": "Plrs13tafoT3gIdoAN/XjjoP+90E4NOJkcFHJw/Vxuk="
             }
           },
-          "GetUserLambdaVersionlqVVOgQOV31Hu6oNNccO4pLBo1JyiyXvkdS3J3dKrfY": {
+          "GetUserLambdaVersionAg8abAeoWaFYYnPMLf4ZnbCsboEhPHrkt2eJqin1w": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetUserLambdaFunction"
               },
-              "CodeSha256": "vHb80aUyNI7ODH/TBa9/dHZ6cyHT33vWBMoyj2TJM04="
+              "CodeSha256": "Plrs13tafoT3gIdoAN/XjjoP+90E4NOJkcFHJw/Vxuk="
             }
           },
           "ApiGatewayRestApi": {
@@ -566,7 +566,7 @@
               "CreateUserLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1632270132255": {
+          "ApiGatewayDeployment1633732871942": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -727,7 +727,7 @@
           "AppLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AppLambdaVersiondBzneVWNNojj4fqqfKJNt8w5unWCHspKvcRWGxojU"
+              "Ref": "AppLambdaVersionPXHv6qVtrNqIhp4dMExljwETgJmkBz38OwX5QYFZE"
             },
             "Export": {
               "Name": "sls-my-express-application-dev-AppLambdaFunctionQualifiedArn"
@@ -736,7 +736,7 @@
           "CreateUserLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "CreateUserLambdaVersion5zK6OnQttYSc9zUqoQ3VJA2zrtC1d3m85iXzD4iiuV4"
+              "Ref": "CreateUserLambdaVersionwLv2AClkbDdznckVpMG6q80f1CZrgJXHjGwmXGFKsY"
             },
             "Export": {
               "Name": "sls-my-express-application-dev-CreateUserLambdaFunctionQualifiedArn"
@@ -745,7 +745,7 @@
           "GetUserLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetUserLambdaVersionlqVVOgQOV31Hu6oNNccO4pLBo1JyiyXvkdS3J3dKrfY"
+              "Ref": "GetUserLambdaVersionAg8abAeoWaFYYnPMLf4ZnbCsboEhPHrkt2eJqin1w"
             },
             "Export": {
               "Name": "sls-my-express-application-dev-GetUserLambdaFunctionQualifiedArn"
@@ -893,7 +893,7 @@
         "timeout": 6,
         "runtime": "nodejs14.x",
         "vpc": {},
-        "versionLogicalId": "AppLambdaVersiondBzneVWNNojj4fqqfKJNt8w5unWCHspKvcRWGxojU"
+        "versionLogicalId": "AppLambdaVersionPXHv6qVtrNqIhp4dMExljwETgJmkBz38OwX5QYFZE"
       },
       "getUser": {
         "handler": "index.handler",
@@ -908,7 +908,7 @@
         "timeout": 6,
         "runtime": "nodejs14.x",
         "vpc": {},
-        "versionLogicalId": "GetUserLambdaVersionlqVVOgQOV31Hu6oNNccO4pLBo1JyiyXvkdS3J3dKrfY"
+        "versionLogicalId": "GetUserLambdaVersionAg8abAeoWaFYYnPMLf4ZnbCsboEhPHrkt2eJqin1w"
       },
       "createUser": {
         "handler": "index.handler",
@@ -923,7 +923,7 @@
         "timeout": 6,
         "runtime": "nodejs14.x",
         "vpc": {},
-        "versionLogicalId": "CreateUserLambdaVersion5zK6OnQttYSc9zUqoQ3VJA2zrtC1d3m85iXzD4iiuV4"
+        "versionLogicalId": "CreateUserLambdaVersionwLv2AClkbDdznckVpMG6q80f1CZrgJXHjGwmXGFKsY"
       }
     },
     "resources": {
@@ -977,10 +977,10 @@
     },
     "layers": {},
     "isDashboardMonitoringPreconfigured": false,
-    "artifact": "/Users/xscoopy/my-express-application/.serverless/my-express-application.zip"
+    "artifact": "/Users/johnnyquinn/dev/courses/senior/term1/Advanced_Web Patterns_ACS 3210/serverless/.serverless/my-express-application.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/my-express-application/dev/1632270149423-2021-09-22T00:22:29.423Z",
+    "artifactDirectoryName": "serverless/my-express-application/dev/1633732878588-2021-10-08T22:41:18.588Z",
     "artifact": "my-express-application.zip"
   }
 }
